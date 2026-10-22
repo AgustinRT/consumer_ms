@@ -1,0 +1,26 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugin": ["opencode-lmstudio@1.0.0-rc.1"],
+  "permission": {
+    "skill": {
+      "*": "allow"
+    }
+  },
+  "mcp": {
+    "mcps1": {
+    "type": "local",
+      "enabled": true,
+      "command": [
+        "uv",
+        "--directory",
+        "/home/agustin/lm_proyects/mcps1",
+        "run",
+        "--with",
+        "mcp",
+        "mcp",
+        "run",
+        "src/mcps1/main.py"
+      ]
+    }
+  }
+} 
